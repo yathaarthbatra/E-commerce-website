@@ -101,11 +101,58 @@ header.topbar .icons a{
 header.topbar .auth >div{
     margin: 0.6rem;
 }
+nav .top{
+    padding: 1rem 0;
+}
  nav .top .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+nav .top .container .contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .top .container .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .top .container .contact  div{
+    margin-left: 1rem;
+}
+nav .top .container .time img{
+    margin-right: 1rem;
+}
+/* as flex is used repeatdly we can make utility function */
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-item{
+    align-items: center;
+}
+nav .navbar .container > a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Raleway-semibold";
+    color: var(--secondary);
+    padding: 1rem 1.5rem;
+}
+nav .navbar .container a.active{
+    background: var(--primary);
+}
+nav .navbar .container a:hover{
+    background: var(--primary);
+    color: var(--pure);
+}
+
 
 
 
