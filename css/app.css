@@ -1,0 +1,115 @@
+@font-face{
+    font-family: "Raleway-regular";
+    src: url(../assets/fonts/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: "Raleway-medium";
+    src: url(../assets/fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: "Raleway-bold";
+    src: url(../assets/fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: "Raleway-semibold";
+    src: url(../assets/fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Raleway-black";
+    src: url(../assets/fonts/Raleway-Black.ttf);
+}
+*{
+    /* *means that it applies to all the elemnets */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    -webkit-font-smoothing:antialiased;
+    /* to smooth the font */
+}
+
+/* we will be creating the variables for colour to remember easily */
+:root{
+    --primary:#EEBF00;
+    --secondary:#232B38;
+    --ternary:#6C6C6C;
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
+}
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    /* this margin is used to center the container */
+}
+@media(min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media(min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media(min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media(min-width:1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+header.topbar{
+    background: var(--secondary);
+    color: var(--pure);
+    font-family:"Raleway-semibold";
+}
+header.topbar .auth > div a{
+    color: var(--pure);
+    text-decoration: none;
+    
+}
+header.topbar .container{
+    display: flex;
+    /* by display flex,the left div and right div will take place */
+    /* to have space b/w we use justify-content */
+    justify-content: space-between;
+    align-items: center;
+}
+ header.topbar .container .auth{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}   
+header.topbar .icons{
+    padding: 0.75rem 0;
+    
+    
+}
+header.topbar .icons a{
+    margin-right: 0.6rem;
+}
+header.topbar .auth >div{
+    margin: 0.6rem;
+}
+ nav .top .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
